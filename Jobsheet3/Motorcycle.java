@@ -28,6 +28,12 @@ public class Motorcycle {
     public void setKecepatan(int kecepatan) {
         if (!this.isMachineOn && kecepatan > 0) {
             System.out.println("If the machine off, the speed cannot be more than 0");
+        } else if (kecepatan > 100) {
+            System.out.println("The speed is too high. Speed max is 100.");
+            this.kecepatan = 100;
+        } else if (kecepatan < 0) {
+            System.out.println("The speed is too low. Must be more than 0.");
+            this.kecepatan = 0;
         } else {
             this.kecepatan = kecepatan;
         }
