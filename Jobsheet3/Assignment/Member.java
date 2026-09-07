@@ -58,16 +58,21 @@ public class Member {
     }
 
     public void installment(int nominal) {
-        if (loanAmount > 0) {
-            loanAmount -= nominal;
-            System.out.println("Successful installment payment process.");
-            if (loanAmount == 0) {
+        double limit = loanAmount * 0.1;
+        if (nominal < limit) {
+            System.out.println("Sorry, the installment must be 10% of the loan amount.");
+        } else {
+            if (loanAmount > 0) {
+                loanAmount -= nominal;
+                System.out.println("Successful installment payment process.");
+                if (loanAmount == 0) {
+                    System.out.println("The loan amount has reached 0. Repayment is complete.");
+                } else {
+                    System.out.println("Current Loan Amount: " + loanAmount);
+                }
+            } else if (loanAmount == 0) {
                 System.out.println("The loan amount has reached 0. Repayment is complete.");
-            } else {
-                System.out.println("Current Loan Amount: " + loanAmount);
             }
-        } else if (loanAmount == 0) {
-            System.out.println("The loan amount has reached 0. Repayment is complete.");
         }
     }
 }

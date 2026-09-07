@@ -13,6 +13,9 @@ public class TestCooperative {
         System.out.println("\nBorrow 4,000,000...");
         mmb1.borrow(4000000);
 
+        System.out.println("\nPaying 50,000... installments");
+        mmb1.installment(50000);
+
         System.out.println("\nPaying 1,000,000 installments");
         mmb1.installment(1000000);
 
