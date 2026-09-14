@@ -1,4 +1,4 @@
-package Jobsheet4;
+package Jobsheet4.Hospital;
 
 public class Employee {
     private String nip;
