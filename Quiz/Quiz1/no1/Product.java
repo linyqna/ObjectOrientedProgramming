@@ -95,7 +95,7 @@ public class Product {
         info += "\n===== PRODUCT DETAIL =====\n";
         info += "\nNo ID      : " + this.productID + "\n";
         info += "Name       : " + this.productName + "\n";
-        info += "Price      : " + String.format("%.0f", productPrice) + "\n";
+        info += "Price      : Rp" + String.format("%.0f", productPrice) + "\n";
         info += "Type       : " + this.productType + "\n";
         if (this.stok != null) {
             info += this.stok.getInfo() + "\n";

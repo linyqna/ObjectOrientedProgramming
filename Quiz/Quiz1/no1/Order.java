@@ -91,7 +91,7 @@ public class Order {
             info += "No products added";
         } else {
             for (Product p : products) {
-                info += "\n\t   -" + p.getProductName() + ", Price: " + String.format("%.0f", p.getProductPrice())  + "\n";
+                info += "\n\t   -" + p.getProductName() + " (Rp" + String.format("%.0f", p.getProductPrice()) + ")" + "\n";
             }
         }
 
