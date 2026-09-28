@@ -1,4 +1,4 @@
-package Jobsheet6.Exp1;
+package Jobsheet6.Experiment;
 
 public class Lecturer {
     public Lecturer() {
