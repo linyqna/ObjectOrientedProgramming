@@ -8,9 +8,9 @@ public class Lecturer extends Employee{
         this.nidn = nidn;
     }
 
-    public Lecturer() {
-        System.out.println("Object from Lecturer Class made.");
-    }
+    // public Lecturer() {
+    //     System.out.println("Object from Lecturer Class made.");
+    // }
 
     public String getInfo() {
         return "NIDN    : " + this.nidn + "\n";
