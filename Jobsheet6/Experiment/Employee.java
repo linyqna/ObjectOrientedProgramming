@@ -5,8 +5,14 @@ public class Employee {
     public String name;
     protected double salary;
 
-    public Employee() {
-        System.out.println("Object from Employee Class made.");
+    // public Employee() {
+    //     System.out.println("Object from Employee Class made.");
+    // }
+
+    public Employee(String nip, String name, double salary) {
+        this.nip = nip;
+        this.name = name;
+        this.salary = salary;
     }
 
     public String getInfo() {

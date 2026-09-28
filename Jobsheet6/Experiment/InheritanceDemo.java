@@ -10,5 +10,8 @@ public class InheritanceDemo {
         dosen1.nidn = "1989432435";
 
         System.out.println(dosen1.getAllInfo());
+
+        Lecturer dosen2 = new Lecturer("34329837", "Yansy Ayuningtyas", 3000000, "1989432435");
+        System.out.println(dosen2.getAllInfo());
     }
 }
