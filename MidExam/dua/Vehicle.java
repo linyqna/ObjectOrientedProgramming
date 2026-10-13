@@ -1,4 +1,4 @@
-package UTS.Vehicle;
+package MidExam.dua;
 
 public class Vehicle {
     public String brand;

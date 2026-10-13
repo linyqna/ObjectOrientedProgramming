@@ -1,4 +1,4 @@
-package UTS.Vehicle;
+package MidExam.dua;
 
 public class Vario extends Motorcycle {
     public String color;
