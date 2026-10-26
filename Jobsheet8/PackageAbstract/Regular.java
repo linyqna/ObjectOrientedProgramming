@@ -1,4 +1,4 @@
-package Jobsheet9.PackageAbstract;
+package Jobsheet8.PackageAbstract;
 
 public class Regular extends Package {
     private int estimasiDay;
