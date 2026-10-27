@@ -1,6 +1,6 @@
 package Jobsheet8.Experiment;
 
-public class Animal {
+public abstract class Animal {
     public double weight;
     public String makanan;
     public String habitat;
@@ -11,9 +11,9 @@ public class Animal {
         this.habitat = habitat;
     }
 
-    public void moving() {}
+    public abstract void moving();
 
-    public void breath() {}
+    public abstract void breath();
 
     public void printInfo() {
         System.out.println("Weight  : "  + this.weight);
