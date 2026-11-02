@@ -15,4 +15,9 @@ public class Fan extends ElectronicDevice {
     public void setType(String type) {
         this.type = type;
     }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + ", Type: " + type;
+    }
 }

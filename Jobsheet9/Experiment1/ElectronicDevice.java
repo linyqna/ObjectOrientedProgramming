@@ -34,4 +34,8 @@ public class ElectronicDevice {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    public String getInfo() {
+        return "Brand: " + brand + ", Color: " + color + ", Price: $" + price;
+    }
 }

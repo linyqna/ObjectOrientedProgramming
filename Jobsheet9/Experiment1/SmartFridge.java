@@ -25,4 +25,9 @@ public class SmartFridge extends Refrigerator implements Audible {
     public void decreaseVolume(int decrement) {
         this.volume -= decrement;
     }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + ", Volume: " + volume;
+    }
 }

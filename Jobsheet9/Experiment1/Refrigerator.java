@@ -15,4 +15,9 @@ public class Refrigerator extends ElectronicDevice {
     public void setNumberOfDoors(int numberOfDoors) {
         this.numberOfDoors = numberOfDoors;
     }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + ", Number of Doors: " + numberOfDoors;
+    }
 }

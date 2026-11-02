@@ -35,4 +35,9 @@ public class Tv extends ElectronicDevice implements Audible {
     public void decreaseVolume(int decrement) {
         this.volume -= decrement;
     }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + ", Screen Type: " + screenType + ", Volume: " + volume;
+    }
 }
